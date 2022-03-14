@@ -1,14 +1,16 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import DefaultUser from "../assets/images/users/default.jfif";
+
 import { Link } from "react-router-dom";
+import { CgHeart } from "react-icons/cg";
+import { TiTabsOutline } from "react-icons/ti";
+import { IoMdPerson } from "react-icons/io";
 
 function Header() {
   return (
-    <header className="w-full flex flex-row items-center px-4 py-2 border-b">
-      <div className="flex flex-row items-center space-x-6 flex-grow flex-shrink w-full text-xl font-bold">
+    <header className="w-full flex flex-row items-center px-2.5 xs:px-4 py-2 z-10 shadow-elevation">
+      <div className="flex flex-row items-center space-x-1.5 2xs:space-x-4 xs:space-x-6 flex-grow flex-shrink w-full text-lg xs:text-xl font-bold">
         <Link to="/">
-          {" "}
           <svg
             width="40px"
             height="40px"
@@ -36,20 +38,19 @@ function Header() {
           </svg>
         </Link>
         <Link className="hover:text-link" to="/following">
-          Following
+          <p className="hidden 2xs:flex">Following</p>
+          <CgHeart className="flex 2xs:hidden text-3xl" />
         </Link>
         <Link className="hover:text-link" to="/browse">
-          Browse
+          <p className="hidden 2xs:flex">Browse</p>
+          <TiTabsOutline className="flex 2xs:hidden text-3xl" />
         </Link>
       </div>
 
       <SearchBar />
+
       <div className="flex flex-row-reverse flex-grow flex-shrink w-full">
-        <img
-          className="h-10 w-10 rounded-full"
-          src={DefaultUser}
-          alt="User Icon"
-        />
+        <IoMdPerson className="text-3xl" />
       </div>
     </header>
   );

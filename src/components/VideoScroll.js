@@ -3,9 +3,11 @@ import Video from "./Video";
 
 function VideoScroll({ title, videos }) {
   return (
-    <div className="pl-8 mb-7">
-      <h1 className=" text-2xl font-bold">{title}</h1>
-      <div className="flex flex-row space-x-10 pr-8 mt-1 overflow-x-auto scrollbar-none">
+    <div className="space-0">
+      <h2 className="text-2xl font-bold overflow-hidden whitespace-nowrap text-ellipsis">
+        {title}
+      </h2>
+      <div className="flex flex-row gap-10 pr-8 mt-1 overflow-x-auto scrollbar-none">
         {videos.map((video) => (
           <Video video={video} key={video.user.name} />
         ))}

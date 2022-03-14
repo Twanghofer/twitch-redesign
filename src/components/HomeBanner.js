@@ -7,9 +7,11 @@ function HomeBanner() {
 
   return (
     <div className="flex flex-col-reverse xs:flex-row-reverse space-x-5 justify-evenly items-center w-full py-8 m-auto text-white bg-[url('/src/assets/images/background.png')] bg-center bg-fixed bg-cover">
-      <h1 className="flex flex-row xs:flex-col items-center gap-1.5 xs:gap-2 text-base xs:text-4xl font-medium xs:font-bold text-center uppercase tracking-wide">
+      <h1 className="flex flex-row xs:flex-col items-center gap-1.5 xs:gap-2 text-lg xs:text-4xl font-medium xs:font-extrabold text-center uppercase tracking-wide">
         <span>Creator</span>
-        <span className="align-middle text-base xs:text-2xl">of the</span>
+        <span className="align-middle text-xl xs:text-2xl xs:font-bold">
+          of the
+        </span>
         <span>Month</span>
       </h1>
       <div className=" h-28 border-collapse border-2 border-white hidden xs:block "></div>

@@ -6,11 +6,11 @@ function UserLive({ video }) {
   return (
     <Link
       to={`/${video.user.name.toLowerCase()}`}
-      className="flex flex-col items-center flex-shrink-0 space-y-2 text-base cursor-pointer"
+      className="flex flex-col justify-center items-center flex-shrink-0 space-y-2 w-32 h-40 text-base cursor-pointer"
     >
       <div className="relative">
         <img
-          className="w-24 h-24 rounded-full object-cover border border-neutral-300"
+          className={`w-24 h-24 rounded-full object-cover border border-neutral-300`}
           src={video.user.image}
           alt={`${video.user.name}'s Profile Picture`}
         />
@@ -21,9 +21,9 @@ function UserLive({ video }) {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center leading-tight whitespace-nowrap">
-        <p className="font-bold">{video.user.name}</p>
-        <p className="text-sm">{video.game}</p>
+      <div className="flex flex-col items-center leading-tight w-full overflow-hidden">
+        <p className="font-bold whitespace-nowra">{video.user.name}</p>
+        <p className="text-sm whitespace-nowrap">{video.game}</p>
       </div>
     </Link>
   );

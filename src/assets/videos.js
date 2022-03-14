@@ -77,7 +77,7 @@ export default [
       name: "TheJRM_",
       image: users["TheJRM_.jfif"],
     },
-    following: false,
+    following: true,
   },
   {
     title: "1212 Crown Wins",

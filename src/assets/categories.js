@@ -22,7 +22,7 @@ export default [
     image: categories["EldenRing.jpg"],
   },
   {
-    name: "Just chatting",
+    name: "Just Chatting",
     viewcount: 217491,
     image: categories["JustChatting.jpg"],
   },
@@ -60,5 +60,20 @@ export default [
     name: "Grand Theft Auto V",
     viewcount: 52700,
     image: categories["GTA.jpg"],
+  },
+  {
+    name: "Hearthstone",
+    viewcount: 25600,
+    image: categories["Hearthstone.jpg"],
+  },
+  {
+    name: "Dead by Daylight",
+    viewcount: 19700,
+    image: categories["DeadByDay.jpg"],
+  },
+  {
+    name: "Chess",
+    viewcount: 4400,
+    image: categories["Chess.jpg"],
   },
 ];

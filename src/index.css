@@ -2,16 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .shadow-elevation {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --video-width: 15rem;
+  --category-width: 8rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    --video-width: 20rem;
+    --category-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    --video-width: 100%;
+  }
 }
 
 /* width */
