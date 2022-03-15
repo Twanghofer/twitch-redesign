@@ -5,7 +5,7 @@ function VideoGrid({ videos, title }) {
   return (
     <div>
       <h2 className=" text-2xl font-bold">{title}</h2>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(var(--video-width),1fr))] gap-x-8">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(var(--video-width),1fr))] gap-x-8 mt-1">
         {videos.map((video) => (
           <Video
             video={video}

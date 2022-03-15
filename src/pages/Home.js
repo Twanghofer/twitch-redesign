@@ -11,7 +11,7 @@ function Home() {
     <>
       <HomeBanner />
       <UserFollowingScroll />
-      <div className="pl-8 mb-7 space-y-8">
+      <div className="pl-8 mt-5 mb-12 space-y-8">
         <VideoScroll
           title="Recently watched streams"
           videos={videos

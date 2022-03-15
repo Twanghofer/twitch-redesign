@@ -7,7 +7,7 @@ function VideoScroll({ title, videos }) {
       <h2 className="text-2xl font-bold overflow-hidden whitespace-nowrap text-ellipsis">
         {title}
       </h2>
-      <div className="flex flex-row gap-10 pr-8 mt-1 overflow-x-auto scrollbar-none">
+      <div className="flex flex-row gap-10 pr-8 mt-1.5 overflow-x-auto scrollbar-none">
         {videos.map((video) => (
           <Video video={video} key={video.user.name} />
         ))}
